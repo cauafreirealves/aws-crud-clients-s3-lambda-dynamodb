@@ -114,7 +114,7 @@ Essa etapa foi essencial para garantir **segurança e boas práticas** no uso da
 
 ## 📊 Arquitetura Final
 
-<img src="https://github.com/cauafreirealves/aws-crud-clients-s3-lambda-dynamodb/blob/main/diagrama.png">
+<img src="https://github.com/cauafreirealves/aws-crud-clients-s3-lambda-dynamodb/blob/main/diagramaAWS.png">
 ---
 
 ## ✅ Conclusão
