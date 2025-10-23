@@ -25,15 +25,19 @@ O **frontend** foi criado com HTML, CSS e JavaScript puros, oferecendo uma inter
 
 O site foi hospedado no **Amazon S3**, utilizando o recurso **Static Website Hosting**, o que permite disponibilizar páginas HTML de forma pública e gratuita dentro do Free Tier.  
 
-📸 **Prints a serem adicionados:**  
-- Tela do site hospedado  
-- Configuração do bucket S3 (public access, static website hosting)  
+**Tela do site hospedado:**
+  <img src="https://github.com/cauafreirealves/aws-crud-clients-s3-lambda-dynamodb/blob/main/Captura%20de%20tela%20site%20no%20navegador.jpeg">
+**Configuração de Bucket:** 
+  <img src="https://github.com/cauafreirealves/aws-crud-clients-s3-lambda-dynamodb/blob/main/Captura%20de%20tela%20URL%20Publica%20S3.jpeg">
 
 ---
 
 ### ⚙️ 2. Backend (AWS Lambda)
 
-O **backend** foi implementado em **Node.js 20** e hospedado em uma função **AWS Lambda** chamada `createClient`.  
+O **backend** foi implementado em **Node.js 20** e hospedado em uma função **AWS Lambda** chamada `createClient`. 
+
+**Função Criada:**
+<img src="https://github.com/cauafreirealves/aws-crud-clients-s3-lambda-dynamodb/blob/main/Captura%20de%20tela%20Fun%C3%A7%C3%A3o%20Lambda%20Criada.jpeg">
 
 Essa função foi programada para responder a **quatro métodos HTTP diferentes**:
 - `GET` → Listar todos os clientes  
@@ -43,10 +47,11 @@ Essa função foi programada para responder a **quatro métodos HTTP diferentes*
 
 A função se conecta diretamente ao **DynamoDB**, executando as operações de leitura e escrita conforme o método recebido.  
 
-📸 **Prints a serem adicionados:**  
-- Console da função Lambda  
-- Testes realizados com diferentes métodos  
-- Logs de execução (CloudWatch)  
+**Codigo Backend Na Lambda:**
+<img src="https://github.com/cauafreirealves/aws-crud-clients-s3-lambda-dynamodb/blob/main/Captura%20de%20tela%20codigo%20backend.jpeg">
+
+**Teste da Função:**
+<img src="https://github.com/cauafreirealves/aws-crud-clients-s3-lambda-dynamodb/blob/main/Captura%20de%20tela%20teste%20da%20fun%C3%A7%C3%A3o.jpeg">
 
 ---
 
@@ -60,10 +65,16 @@ Foi criada uma rota principal `/clientes` com os métodos:
 - `GET`, `POST`, `PUT`, `DELETE`  
 Todos apontando para a mesma função `createClient`.
 
-📸 **Prints a serem adicionados:**  
-- Rotas configuradas no API Gateway  
-- Deploy da API e URL final do endpoint  
+**API Criada:** 
+<img src="https://github.com/cauafreirealves/aws-crud-clients-s3-lambda-dynamodb/blob/main/Captura%20de%20tela%20API%20criada.jpeg">
 
+**Integração da API:**
+
+<img src="https://github.com/cauafreirealves/aws-crud-clients-s3-lambda-dynamodb/blob/main/Captura%20de%20tela%20Integra%C3%A7%C3%A3o%20da%20API.jpeg">
+
+**Invoke URL:**
+
+<img src="https://github.com/cauafreirealves/aws-crud-clients-s3-lambda-dynamodb/blob/main/Captura%20de%20tela%20Invoke%20URL.jpeg">
 ---
 
 ### 🗄️ 4. Banco de Dados (DynamoDB)
@@ -78,9 +89,15 @@ Outros atributos armazenados:
 - `email`  
 - `telefone`  
 
-📸 **Prints a serem adicionados:**  
-- Estrutura da tabela no DynamoDB  
-- Itens armazenados após os testes  
+**Tabela Criada:**
+
+ <img src="https://github.com/cauafreirealves/aws-crud-clients-s3-lambda-dynamodb/blob/main/Captura%20de%20tela%20Tabela%20criada.jpeg">
+
+ **Itens na Tabela:**
+ 
+  <img src="https://github.com/cauafreirealves/aws-crud-clients-s3-lambda-dynamodb/blob/main/Captura%20de%20tela%20tabela%20clientes.jpeg">
+  
+--- 
 
 ---
 
@@ -90,16 +107,14 @@ Foi criada uma **Role IAM** para a função Lambda, concedendo acesso apenas aos
 
 Essa etapa foi essencial para garantir **segurança e boas práticas** no uso da AWS.
 
-📸 **Prints a serem adicionados:**  
-- Políticas da Role IAM atribuída à Lambda  
+**Role Criada:**
 
+ <img src="https://github.com/cauafreirealves/aws-crud-clients-s3-lambda-dynamodb/blob/main/Captura%20de%20tela%20Role%20IAM.jpeg">
 ---
 
 ## 📊 Arquitetura Final
 
-📸 **Print sugerido:**  
-- Diagrama da arquitetura (pode ser desenhado no Lucidchart, Excalidraw ou PowerPoint)
-
+<img src="https://github.com/cauafreirealves/aws-crud-clients-s3-lambda-dynamodb/blob/main/diagrama.png">
 ---
 
 ## ✅ Conclusão
@@ -116,12 +131,7 @@ Durante o desenvolvimento, foi possível praticar:
 > ⚠️ Observação:  
 > Todos os recursos foram criados dentro da **AWS Free Tier** e posteriormente desativados para evitar consumo de créditos.  
 
-📸 **Prints finais a serem adicionados:**  
-- Tela do sistema funcionando  
-- Tabela DynamoDB com os dados  
-- Lambda executando com sucesso  
 
----
 
 ## ✍️ Autor
 
